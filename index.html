@@ -10,8 +10,6 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <script defer src="js/scripts.js"></script>
     
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 
@@ -36,7 +34,7 @@
 
     <main>
         
-        <section id="sobre-mi" class="seccion">
+        <section id="sobre-mi">
             <h2>Sobre Mí</h2>
             <img src="img/miavatar.png" alt="Mi avatar sonriendo" width="150"> <p>
                 Hola, soy Sergio, tengo 50 años y vivo en Lanús. Estoy casado y tengo una hija.
@@ -48,7 +46,7 @@ Aunque soy Analista de Sistemas, mi camino profesional tomó otro rumbo, y hoy c
             </p>
         </section>
 
-        <section id="tarjetas" class="seccion">
+        <section id="tarjetas">
             <h2>Proyectos Destacados</h2>
             <div class="tarjetas-container">
                 <div class="tarjeta">
@@ -62,7 +60,7 @@ Aunque soy Analista de Sistemas, mi camino profesional tomó otro rumbo, y hoy c
                 </div>
         </section>
 
-        <section id="habilidades" class="seccion">
+        <section id="habilidades">
             <h2>Mis Habilidades</h2>
             <div class="habilidades-container">
                 <div>
@@ -94,10 +92,9 @@ Aunque soy Analista de Sistemas, mi camino profesional tomó otro rumbo, y hoy c
             </div>
         </section>
 
-        <section id="contacto" class="seccion">
+        <section id="contacto">
             <h2>Contacto</h2>
             <form action="#" method="post"> <div>
-                    <div id="errores"></div>
                     <label for="nombre">Nombre:</label>
                     <input type="text" id="nombre" name="nombre" required>
                 </div>
@@ -113,13 +110,10 @@ Aunque soy Analista de Sistemas, mi camino profesional tomó otro rumbo, y hoy c
                     <label for="telefono">Teléfono:</label>
                     <input type="tel" id="telefono" name="telefono"> </div>
                 <button type="submit">Enviar Mensaje</button>
-                <div id="popup" class="popup" style="display: none;">
-                    ¡Mensaje enviado con éxito!
-                </div>
             </form>
         </section>
 
-        <section id="peliculas" class="seccion">
+        <section id="peliculas">
             <h2>Mis Películas Favoritas</h2>
             <!--Futuro: Podría incorporar estrellas de puntuación o enlaces a trailers. -->
             <div class="peliculas-container">
@@ -135,22 +129,15 @@ Aunque soy Analista de Sistemas, mi camino profesional tomó otro rumbo, y hoy c
                 </div>
                 <div class="pelicula">
                     <h3>Los Puentes de Madison</h3>
-                    <img src="img/los_puentes_de_madison_972409630_large.jpg" alt="Poster Los Puentes de Madison" width="150"> <p>Es un drama romántico dirigido y protagonizado por Clint Eastwood, junto a Meryl Streep. La historia gira en torno a un breve pero intenso romance entre una ama de casa y un fotógrafo forastero, que se conocen durante cuatro días en un tranquilo pueblo de Iowa.
+                    <img src="img/los_puentes_de_madison_972409630_large.jpg" alt="Poster Los Puentes de Madison" width="150"> <p>es un drama romántico dirigido y protagonizado por Clint Eastwood, junto a Meryl Streep. La historia gira en torno a un breve pero intenso romance entre una ama de casa y un fotógrafo forastero, que se conocen durante cuatro días en un tranquilo pueblo de Iowa.
 
                         Es una emotiva reflexión sobre el amor, las decisiones y los sacrificios.</p>
                 </div>
             </div>
         </section>
-        
+
     </main>
-    <section id="extras">
-        <div>
-            <label for="modo-toggle">Modo Oscuro:</label>
-            <input type="checkbox" id="modo-toggle">
-        </div>
-        <div id="contador-visitas"></div>
-        <div id="temporizador"></div>
-    </section>
+
     <footer>
         <p>&copy; 2025 Sergio Godoy. Todos los derechos reservados.</p>
         <div>
@@ -161,8 +148,6 @@ Aunque soy Analista de Sistemas, mi camino profesional tomó otro rumbo, y hoy c
             <!-- Pie de página con enlaces sociales. 
              Futuro: Agregar íconos visuales o una sección de contacto directo. -->
     </footer>
-    <script src="js/script.js"></script>
-    
-    
+
 </body>
 </html>
