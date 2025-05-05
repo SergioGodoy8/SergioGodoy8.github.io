@@ -17,7 +17,7 @@ body {
 }
 
 
-/*main {
+main {
     max-width: 1000px; 
     margin: 20px auto; 
     padding: 0; 
@@ -25,26 +25,7 @@ body {
     border-radius: 8px; 
     box-shadow: 0 3px 8px rgba(0,0,0,0.08); 
     overflow: hidden; 
-}*/
-
-/* Layout general de secciones */
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-    padding: 2rem;
 }
-
-/* Contenedores de secciones */
-.seccion {
-    width: 100%;
-    max-width: 1000px;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
 
 /* Header, Footer, Nav (mantienen su propio padding y fondo) */
 header, footer, nav {
@@ -105,7 +86,7 @@ nav ul li a:hover {
 
 
 section {
-    padding: 35px 30px; 
+    padding: 35px 30px; /* padding superior/inferior y lateral */
     margin-bottom: 0; 
 }
 
@@ -524,182 +505,3 @@ footer a {
 footer a:hover {
     color: #673ab7;
 }
-.popup {
-    background-color: #4CAF50;
-    color: white;
-    padding: 15px;
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 1000;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-    font-weight: bold;
-}
-/* --- Errores formulario --- */
-.error {
-    color: red;
-    font-size: 0.9em;
-    margin-top: 5px;
-}
-
-/* --- Modo Oscuro --- */
-body.oscuro {
-    background-color: #121212;
-    color: #e0e0e0;
-}
-
-body.oscuro header,
-body.oscuro nav,
-body.oscuro main
-{
-    background-color: #111111;
-}
-
-body.oscuro a {
-    color: #bb86fc;
-}
-
-/* --- Sección extras (modo, contador, temporizador) --- */
-#extras {
-    margin: 2rem;
-    text-align: center;
-    font-weight: bold;
-}
-
-#contador-visitas, #temporizador {
-    margin-top: 10px;
-}
-/* Mejora de contraste en modo oscuro */
-body.oscuro {
-    background-color: #121212;
-    color: #f1f1f1;
-    font-family: 'Segoe UI', sans-serif;
-}
-
-/*body.oscuro input,
-body.oscuro textarea {
-    background-color: #1e1e1e;
-    color: #f1f1f1;
-    border: 1px solid #444;
-}
-
-body.oscuro input::placeholder,
-body.oscuro textarea::placeholder {
-    color: #aaa;
-}*/
-
-body.oscuro button {
-    background-color: #333;
-    color: #fff;
-    border: 1px solid #555;
-}
-
-body.oscuro button:hover {
-    background-color: #444;
-}
-/* --- Tipografía y contraste mejorado en modo oscuro --- */
-/*body.oscuro h1,*/
-body.oscuro h2,
-body.oscuro h3,
-body.oscuro p,
-body.oscuro li,
-/*body.oscuro a,*/
-body.oscuro span
-/*body.oscuro label*/ {
-    color: #111111;
-    font-family: 'Segoe UI', sans-serif;
-}
-
-/* Mejor legibilidad en párrafos */
-body.oscuro p {
-    line-height: 1.6;
-    font-size: 1.05rem;
-}
-
-/* Mejor contraste en enlaces */
-body.oscuro a {
-    color: #545d64;
-    text-decoration: none;
-}
-
-body.oscuro a:hover {
-    color: #101111;
-    text-decoration: underline;
-}
-
-/* Encabezados */
-body.oscuro h1 {
-    font-size: 2rem;
-    color:#faf7f7;
-}
-
-body.oscuro h2 {
-    font-size: 1.6rem;
-    color: #111111;
-    border-bottom: 1px solid #333;
-    padding-bottom: 0.5rem;
-}
-
-body.oscuro h3 {
-    font-size: 1.3rem;
-    color: #111111;
-}
-
-body.oscuro nav ul li a {
-    text-decoration: none;
-    color: #ffffff; 
-    font-weight: bold;
-    padding: 5px 10px;
-    border-radius: 4px;
-    transition: color 0.3s ease, background-color 0.3s ease; 
-}
-
-body.oscuro nav ul li a:hover {
-    color: #ffffff; 
-    background-color: #8e44ad; 
-}
-body.oscuro #sobre-mi {
-    background-color:#111111;
-}
-body.oscuro #sobre-mi h2,
-body.oscuro #sobre-mi p
-{
-    color:#ffffff;
-}
-body.oscuro #tarjetas {
-    background-color: #111111;
-}
-
-body.oscuro #tarjetas h2
-{
-    color:#ffffff;
-}
-
-body.oscuro #habilidades {
-    background-color: #111111; 
-}
-
-body.oscuro #habilidades h2{
-   color:#ffffff;
-}
-
-body.oscuro #contacto {
-    background-color: #111111;
-
-}
-body.oscuro #contacto h2,
-body.oscuro #contacto label
-{
-    color:#ffffff;
-}
-
-
-body.oscuro #peliculas {
-    background-color: #111111; 
-}
-body.oscuro #peliculas h2
-{
-    color:#ffffff;
-}
-
